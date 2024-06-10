@@ -1,0 +1,53 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição",
+    "price": 1800,
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uol.com.br%2Fesporte%2Ffutebol%2Fultimas-noticias%2F2023%2F08%2F13%2Fneymar-vai-do-sonho-da-bola-de-ouro-e-reinado-no-psg-aos-milhoes-da-arabia.htm&psig=AOvVaw0cDFWHx-NAnGpnr5MOOt0b&ust=1716845550171000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDkwJyirIYDFQAAAAAdAAAAABAE"
+}
+
+###
+
+GET  http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/66670690ee19f761c5df9acb
+
+###
+DELETE  http://localhost:3000/api/services/6666fdb79bd68bbaf3bb32e5
+
+###
+PUT http://localhost:3000/api/services/6653d453f4e18fa335e4ac54
+Content-Type: application/json
+
+{
+    "name": "ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2800,
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uol.com.br%2Fesporte%2Ffutebol%2Fultimas-noticias%2F2023%2F08%2F13%2Fneymar-vai-do-sonho-da-bola-de-ouro-e-reinado-no-psg-aos-milhoes-da-arabia.htm&psig=AOvVaw0cDFWHx-NAnGpnr5MOOt0b&ust=1716845550171000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDkwJyirIYDFQAAAAAdAAAAABAE"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Festa Linda",
+    "author": "Caio e MC Kevin",
+    "description": "Revoada da Festa Linda",
+    "budget": 20000,
+    "image": "https://s2-g1.glbimg.com/ycfWZheVeWhzHWTC3PosfjmGq68=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/6/y/Uny910Q36CqBnsy8XEAg/mckevinface.jpg",
+    "services": [
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1800,
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uol.com.br%2Fesporte%2Ffutebol%2Fultimas-noticias%2F2023%2F08%2F13%2Fneymar-vai-do-sonho-da-bola-de-ouro-e-reinado-no-psg-aos-milhoes-da-arabia.htm&psig=AOvVaw0cDFWHx-NAnGpnr5MOOt0b&ust=1716845550171000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDkwJyirIYDFQAAAAAdAAAAABAE"
+        }
+    ]
+
+}
+###
+GET http://localhost:3000/api/parties
